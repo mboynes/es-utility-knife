@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Elasticsearch Utility Knife</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style type="text/css" media="screen">
+		body { padding-top: 60px; }
+		@media (max-width:979px) { body { padding-top: 0; } }
+		code { color: black; }
+		.caret-up { border-top: 0; border-bottom: 4px solid #000000; }
+	</style>
+</head>
+<body>
+
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="#">Elasticsearch Utility Knife</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li class="active"><a href="#home">JSON</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+
+	<div id="wrapper" class="container">
+
+		<div id="view_wrapper">
+
+			<div id="home">
+				<div class="row">
+					<div class="view-container span6">
+						<form method="post" data-response="home_response">
+							<input type="hidden" name="type" value="basic" />
+							<div class="control-group">
+								<label class="control-label" for="code">URL</label>
+								<div class="controls">
+									<input name="url" id="request_url" value="http://localhost:9200/" type="text" class="span6 request_url" />
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="code">Request Body</label>
+								<div class="controls">
+									<textarea name="body" id="request_body" rows="8" cols="40" class="request_body span6"></textarea>
+								</div>
+							</div>
+							<div class="form-actions">
+								<input value="GET" name="method" type="submit" class="btn btn-primary" />
+								<input value="POST" name="method" type="submit" class="btn" />
+								<input value="PUT" name="method" type="submit" class="btn" />
+								<input value="DELETE" name="method" type="submit" class="btn" />
+							</div>
+						</form>
+						<p>
+							<a href="#request_history" class="show_toggle pull-right btn"><span class="caret caret-up"></span> Hide History</a>
+						</p>
+						<div id="request_history" class="well" style="padding:8px 0">
+							<ul class="nav nav-list">
+						  		<li class="nav-header">Request History</li>
+						  	</ul>
+						</div>
+					</div>
+
+					<div class="view-container span6">
+						<pre id="home_response" class="well">
+                         _
+                        | |
+ ___  ___  __ _ _ __ ___| |__
+/ __|/ _ \/ _` | '__/ __| '_ \
+\__ \  __/ (_| | | | (__| | | |
+|___/\___|\__,_|_|  \___|_| |_|
+
+               			</pre>
+					</div>
+				</div>
+			</div>
+
+		</div> <!-- #view_wrapper  -->
+
+		<hr>
+
+		<footer>
+			<p>You know, for testing</p>
+		</footer>
+	</div> <!-- #wrapper.container -->
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/application.js"></script>
+</body>
+</html>
