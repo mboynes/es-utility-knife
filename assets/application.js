@@ -47,7 +47,7 @@ $(function(){
 		var id = $(this).data('id');
 		if ( request_archives && request_archives[id] ) {
 			$('#request_url').val( request_archives[id].url );
-			$('#request_body').val( request_archives[id].body );
+			editor.setValue( request_archives[id].body );
 		}
 	});
 
