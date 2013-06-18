@@ -15,7 +15,9 @@ Try it out at http://mboynes.github.io/es-utility-knife/
 * http://github.com/mboynes
 
 
-## License
+## Copyright & License
+
+Copyright 2013 Matthew Boynes
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
